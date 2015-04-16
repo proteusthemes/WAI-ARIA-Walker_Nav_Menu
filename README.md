@@ -6,9 +6,9 @@ Nav menu walker for WP with correct WAI-ARIA roles for dropdown menus.
 
 1. You can install this class using [Composer](https://getcomposer.org/) (preferred method) or manually copying [this file](https://github.com/ProteusThemes/WAI-ARIA-Walker_Nav_Menu/blob/master/aria-walker-nav-menu.php) to your theme / project..
 
-1. After that, include it in your theme, probably something like:
+1. After that, include it in your theme, probably something like (assuming you installed it using composer):
   ```php
-require_once 'vendor/proteusthemes/wai-aria-walker-nav-menu/aria-walker-nav-menu.php';`
+require_once 'vendor/proteusthemes/wai-aria-walker-nav-menu/aria-walker-nav-menu.php';
 ```
 
   You must [enqueue](https://codex.wordpress.org/Function_Reference/wp_enqueue_script) [wai-aria.js](https://github.com/ProteusThemes/WAI-ARIA-Walker_Nav_Menu/blob/master/wai-aria.js) as well, because the `aria-expanded` attributes needs to be updated with JS.
