@@ -13,9 +13,9 @@ require_once 'vendor/proteusthemes/wai-aria-walker-nav-menu/aria-walker-nav-menu
 
   You must [enqueue](https://codex.wordpress.org/Function_Reference/wp_enqueue_script) [wai-aria.js](https://github.com/ProteusThemes/WAI-ARIA-Walker_Nav_Menu/blob/master/wai-aria.js) as well, because the `aria-expanded` attributes needs to be updated with JS.
 
-1. After that include the menus in your theme files as per example below:
+1. Finally, include the menus in your theme files as per example below:
 
-```html
+  ```html
 <nav class="collapse  navbar-collapse" role="navigation" aria-label="<?php _e( 'Main Menu', 'your-textdomain' ); ?>">
 	<?php
 		if ( has_nav_menu( 'your-menu' ) ) {
@@ -29,7 +29,15 @@ require_once 'vendor/proteusthemes/wai-aria-walker-nav-menu/aria-walker-nav-menu
 		}
 	?>
 </nav>
-```
+  ```
+
+  Mind:
+  
+  - `'walker' => new Aria_Walker_Nav_Menu(),`  
+  - `<nav>` wrapping element and `'container' => false` in the arguments
+  - `role="navigation"`
+  - `aria-label="<?php _e( 'Main Menu', 'your-textdomain' ); ?>"`
+  - `'items_wrap' => '<ul id="%1$s" class="%2$s" role="menubar">%3$s</ul>',`
 
 ### Compatibility with WP
 
