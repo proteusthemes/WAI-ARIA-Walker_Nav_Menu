@@ -15,7 +15,7 @@ require_once 'vendor/proteusthemes/wai-aria-walker-nav-menu/aria-walker-nav-menu
 
 1. Finally, include the menus in your theme files as per example below:
 
-  ```html
+  ```php
 <nav class="collapse  navbar-collapse" role="navigation" aria-label="<?php _e( 'Main Menu', 'your-textdomain' ); ?>">
 	<?php
 		if ( has_nav_menu( 'your-menu' ) ) {
