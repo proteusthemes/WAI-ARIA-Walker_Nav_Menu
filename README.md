@@ -49,4 +49,4 @@ Current version is compatible with WP core **4.1**.
 
 No need to explain - fork me and create a pull request.
 
-### Created by [@primozcigler](//twitter.com/primozcigler) and [@Prelc](//twitter.com/Prelc).
+#### Created by [@primozcigler](//twitter.com/primozcigler) and [@Prelc](//twitter.com/Prelc).
