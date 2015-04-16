@@ -1,0 +1,18 @@
+{
+    "name": "proteusthemes/wai-aria-walker-nav-menu",
+    "description": "WordPress menu walker which adds appropriate WIA-ARIA roles to dropdown menus.",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Primoz Cigler",
+            "email": "primoz@proteusnet.com"
+        },
+        {
+            "name": "Marko Prelec",
+            "email": "marko.prelec@proteusnet.com"
+        }
+    ],
+    "autoload": {
+        "files": ["aria-walker-nav-menu.php"]
+    }
+}
