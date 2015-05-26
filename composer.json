@@ -13,6 +13,6 @@
         }
     ],
     "autoload": {
-        "files": ["aria-walker-nav-menu.php"]
+        "classmap": ["aria-walker-nav-menu.php"]
     }
 }
