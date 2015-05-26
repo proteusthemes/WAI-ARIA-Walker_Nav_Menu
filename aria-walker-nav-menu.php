@@ -1,6 +1,7 @@
 <?php
 /**
  * WAI-ARIA Navigation Menu template functions
+ * @see wp-includes/nav-menu-template.php
  */
 
 /**
@@ -60,7 +61,7 @@ class Aria_Walker_Nav_Menu extends Walker_Nav_Menu {
 		$id = apply_filters( 'nav_menu_item_id', 'menu-item-'. $item->ID, $item, $args, $depth );
 		$id = $id ? ' id="' . esc_attr( $id ) . '"' : '';
 
-		$output .= sprintf( '%s<li%s%s role="menuitem"%s>',
+		$output .= sprintf( '%s<li%s%s%s>',
 			$indent,
 			$id,
 			$class_names,
