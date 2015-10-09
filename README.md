@@ -45,7 +45,7 @@ require_once 'vendor/proteusthemes/wai-aria-walker-nav-menu/aria-walker-nav-menu
 
 This repo aims to be 1:1 compatible with latest WP version, mainly with the class `Walker_Nav_Menu` in the file `/<path-to-wp>/wp-includes/nav-menu-template.php`.
 
-Current version is compatible with WP core **4.2**.
+Current version is compatible with WP core **4.3**.
 
 ### Contributing
 
