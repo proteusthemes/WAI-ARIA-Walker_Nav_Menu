@@ -13,16 +13,6 @@
  */
 class Aria_Walker_Nav_Menu extends Walker_Nav_Menu {
 	/**
-	 * Starts the list before the elements are added.
-	 *
-	 * @see Walker_Nav_Menu::start_lvl() for parameters and longer explanation
-	 */
-	public function start_lvl( &$output, $depth = 0, $args = array() ) {
-		$indent = str_repeat("\t", $depth);
-		$output .= "\n$indent<ul class=\"sub-menu\" role=\"menu\">\n";
-	}
-
-	/**
 	 * Start the element output.
 	 *
 	 * @see Walker_Nav_Menu::start_el() for parameters and longer explanation

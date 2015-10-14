@@ -26,7 +26,7 @@ require_once 'vendor/proteusthemes/wai-aria-walker-nav-menu/aria-walker-nav-menu
 				'container'      => false,
 				'menu_class'     => 'main-navigation',
 				'walker'         => new Aria_Walker_Nav_Menu(),
-				'items_wrap'     => '<ul id="%1$s" class="%2$s" role="menubar">%3$s</ul>',
+				'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 			) );
 		}
 	?>
@@ -39,7 +39,7 @@ require_once 'vendor/proteusthemes/wai-aria-walker-nav-menu/aria-walker-nav-menu
   - `<nav>` wrapping element and `'container' => false` in the arguments
   - `role="navigation"`
   - `aria-label="<?php _e( 'Main Menu', 'your-textdomain' ); ?>"`
-  - `'items_wrap' => '<ul id="%1$s" class="%2$s" role="menubar">%3$s</ul>',`
+  - `'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',`
 
 ### Compatibility with WP
 
