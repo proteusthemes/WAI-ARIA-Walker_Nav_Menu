@@ -62,12 +62,7 @@ class Aria_Walker_Nav_Menu extends Walker_Nav_Menu {
 		$id = apply_filters( 'nav_menu_item_id', 'menu-item-'. $item->ID, $item, $args, $depth );
 		$id = $id ? ' id="' . esc_attr( $id ) . '"' : '';
 
-		$output .= sprintf( '%s<li%s%s%s>',
-			$indent,
-			$id,
-			$class_names,
-			in_array( 'menu-item-has-children', $classes, true ) ? ' aria-haspopup="true" aria-expanded="false" tabindex="0"' : ''
-		);
+		$output .= $indent . '<li' . $id . $class_names . '>';
 
 		$atts = array();
 		$atts['title']  = ! empty( $item->attr_title ) ? $item->attr_title : '';
