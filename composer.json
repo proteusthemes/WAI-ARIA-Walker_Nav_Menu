@@ -1,6 +1,6 @@
 {
     "name": "proteusthemes/wai-aria-walker-nav-menu",
-    "description": "WordPress menu walker which adds appropriate WAI-ARIA roles to dropdown menus.",
+    "description": "WordPress menu walker for dropdown menus.",
     "license": "GPL-2.0-only",
     "authors": [
         {
