@@ -1,6 +1,6 @@
 {
     "name": "proteusthemes/wai-aria-walker-nav-menu",
-    "description": "WordPress menu walker for dropdown menus. Since 1.3.0 it adds no ARIA attributes to menu items.",
+    "description": "WordPress menu walker for dropdown menus.",
     "license": "GPL-2.0-only",
     "authors": [
         {

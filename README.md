@@ -1,6 +1,6 @@
 # WAI-ARIA WordPress Walker
 
-Nav menu walker for WP dropdown menus. Since 1.3.0 it adds no ARIA attributes to menu items.
+Nav menu walker for WP dropdown menus.
 
 ## Install
 
@@ -13,7 +13,7 @@ Nav menu walker for WP dropdown menus. Since 1.3.0 it adds no ARIA attributes to
 require_once 'vendor/proteusthemes/wai-aria-walker-nav-menu/aria-walker-nav-menu.php';
 ```
 
-  Since 1.3.0 the walker doesn't add `aria-haspopup`, `aria-expanded` or `tabindex` to parent `<li>` elements: those ARIA attributes aren't allowed on a list item, and the `tabindex` added an extra Tab stop on every parent item. [wai-aria.js](https://github.com/ProteusThemes/WAI-ARIA-Walker_Nav_Menu/blob/master/wai-aria.js) now has nothing to update, so you don't need to enqueue it; it stays in the package so themes that already enqueue it keep working. To open submenus for keyboard users, add `:focus-within` next to the `:hover` rules that show them.
+  The walker adds no ARIA attributes or `tabindex` to menu items, so you don't need to enqueue [wai-aria.js](https://github.com/ProteusThemes/WAI-ARIA-Walker_Nav_Menu/blob/master/wai-aria.js); the file stays in the package for themes that already load it. To open submenus for keyboard users, add `:focus-within` next to the `:hover` rules that show them.
 
 1. Finally, include the menus in your theme files as per example below:
 
